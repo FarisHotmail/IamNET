@@ -99,16 +99,12 @@ python IamNET.py --cli -c 15 -l -v
 ```
 CLI Color Guide (Summary)
 🟢 Green: Success / Normal
-
 🟡 Yellow: Warning
-
 🔴 Red: Error / Critical
-
 🔵 Blue: Information
-
 🟣 Purple: Verbose details
 
-📸 Screenshots
+## 📸 Screenshots
 Dashboard
 ![Dashboard](screenshots/dashboard.png)
 Settings
