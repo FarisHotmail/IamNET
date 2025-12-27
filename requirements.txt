@@ -1,0 +1,4 @@
+customtkinter
+speedtest-cli
+requests
+psutil
