@@ -12,9 +12,12 @@
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-lightgrey">
   <img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet">
   <img src="https://img.shields.io/badge/Privacy-No%20Telemetry-success">
-  <img src="https://img.shields.io/badge/CLI-Planned-orange">
+  <img src="https://img.shields.io/badge/CLI-Available-success">
 </p>
 
+### Notas del proyecto
+Todo el código utilizado en este proyecto ha sido escrito utilizando la herramienta Google Studio AI y tiene un propósito exclusivamente recreativo.
+Aunque no de forma muy frecuente, el proyecto continuará desarrollándose con el tiempo.
 
 🔷 IamNET
 
@@ -22,21 +25,17 @@ IamNET es una aplicación de escritorio enfocada en la privacidad, diseñada par
 
 🚀 Características
 
-Pruebas de velocidad con múltiples servidores  
-
-Separación entre servidores nacionales e internacionales  
-
-Interfaz gráfica (basada en CustomTkinter)  
-
-Detección de congestión de tráfico  
-
-Soporte de salida en formato CSV  
-
-Infraestructura multilingüe (TR / EN disponible)  
-
-Sin telemetría  
-
-Sin transmisión de datos  
+- Pruebas de velocidad multiservidor
+- Separación de servidores nacionales e internacionales
+- Interfaz gráfica de usuario (basada en CustomTkinter)
+- **Modo CLI (independiente de la interfaz gráfica de usuario)**
+- Detección de carga de tráfico
+- Exportación a CSV
+- Compatibilidad con varios idiomas (compatible con TR/EN)
+- Salida de terminal a color
+- Parada segura con Ctrl+C
+- Sin telemetría
+- Sin transmisión de datos
 
 🔐 Política de Privacidad (Importante)
 
@@ -91,21 +90,61 @@ Los resultados se guardan en archivos CSV
 
 La velocidad instantánea se muestra a través de la GUI  
 
-📸 Capturas de Pantalla
+### Motor de pruebas CLI
+
+- Funcionamiento completamente independiente de la interfaz gráfica de usuario
+- Todos los ajustes se configuran mediante argumentos de línea de comandos
+- Registros de terminal legibles y en color
+- Interrupción segura con Ctrl+C
+- Apto para ejecución en segundo plano y automatización
+
+### Parámetros CLI
+
+| Parámetro | Breve | Descripción |
+|---------|------|-------------|
+| --cli | - | Habilitar modo CLI |
+| --count | -c | Número de servidores (2–100) |
+| --loop | -l | Bucle de prueba infinito |
+| --no-traffic | - | Omitir comprobación de tráfico |
+| --dir | -d | Directorio de guardado personalizado |
+| --verbose | -v | Salida detallada del servidor |
+
+### Ejecución en segundo plano (Linux)
+Ejecutar en segundo plano:
+nohup python IamNET.py --cli --loop > test.log 2>&1 &
+
+Prueba programada (crontab):
+# Ejecutar todas las noches a las 02:00
+0 2 * * * /usr/bin/python3 /path/to/IamNET.py --cli -c 30
+
+🖥️ Uso de la CLI
+
+Prueba básica de la CLI:
+python IamNET.py --cli
+
+Prueba con 20 servidores:
+python IamNET.py --cli --count 20
+
+Bucle infinito:
+python IamNET.py --cli --loop
+
+Omitir comprobación de tráfico:
+python IamNET.py --cli --no-traffic
+
+Salida detallada:
+python IamNET.py --cli --verbose
+
+Directorio de guardado personalizado:
+python IamNET.py --cli --dir /path/to/folder
+
+Uso combinado:
+python IamNET.py --cli -c 15 -l -v
+
+📸 Capturas de Pantalla (GUI)
 ## Panel
 ![Dashboard](screenshots/dashboard.png)
 ## Ajustes
 ![Settings](screenshots/settings.png)
-
-🛠️ Funcionalidades Planificadas
-
-Versión CLI (línea de comandos)  
-
-Distribución de Windows en formato .exe  
-
-Soporte para más idiomas  
-
-Historial de velocidad basado en gráficos  
 
 ❓ Preguntas Frecuentes
 

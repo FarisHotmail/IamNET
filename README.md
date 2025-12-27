@@ -12,8 +12,12 @@
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-lightgrey">
   <img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet">
   <img src="https://img.shields.io/badge/Privacy-No%20Telemetry-success">
-  <img src="https://img.shields.io/badge/CLI-Planned-orange">
+  <img src="https://img.shields.io/badge/CLI-Available-success">
 </p>
+
+### Project Notes
+All code used in this project was written using the Google Studio AI tool and is intended purely as a hobby project.
+Although not very frequently, the project will continue to be developed over time.
 
 🔷 IamNET
 
@@ -22,14 +26,17 @@ It operates entirely locally and is focused on user privacy.
 
 🚀 Features
 
-- Multi-server speed testing  
-- Domestic / international server separation  
-- GUI (based on CustomTkinter)  
-- Network traffic intensity detection  
-- CSV output support  
-- Multi-language infrastructure (TR / EN ready)  
-- No telemetry  
-- No data transmission  
+- Multi-server speed testing
+- Domestic / international server separation
+- GUI (CustomTkinter-based)
+- **CLI mode (GUI-independent)**
+- Traffic load detection
+- CSV export
+- Multi-language support (TR / EN ready)
+- Colored terminal output
+- Ctrl+C safe stop
+- No telemetry
+- No data transmission
 
 🔐 Privacy Policy (Important)
 
@@ -82,21 +89,61 @@ Results are written to CSV files
 
 Real-time speed is displayed via the GUI
 
-📸 Screenshots
+### CLI Test Engine
+
+- Runs completely independent from GUI
+- All settings configurable via command-line arguments
+- Colored and readable terminal logs
+- Safe interruption with Ctrl+C
+- Suitable for background execution and automation
+
+### CLI Parameters
+
+| Parameter | Short | Description |
+|---------|------|-------------|
+| --cli | - | Enable CLI mode |
+| --count | -c | Number of servers (2–100) |
+| --loop | -l | Infinite test loop |
+| --no-traffic | - | Skip traffic check |
+| --dir | -d | Custom save directory |
+| --verbose | -v | Detailed server output |
+
+### Background Execution (Linux)
+Run in background:
+nohup python IamNET.py --cli --loop > test.log 2>&1 &
+
+Scheduled test (crontab):
+# Run every night at 02:00
+0 2 * * * /usr/bin/python3 /path/to/IamNET.py --cli -c 30
+
+🖥️ CLI Usage
+
+Basic CLI test:
+python IamNET.py --cli
+
+Test with 20 servers:
+python IamNET.py --cli --count 20
+
+Infinite loop:
+python IamNET.py --cli --loop
+
+Skip traffic check:
+python IamNET.py --cli --no-traffic
+
+Verbose output:
+python IamNET.py --cli --verbose
+
+Custom save directory:
+python IamNET.py --cli --dir /path/to/folder
+
+Combined usage:
+python IamNET.py --cli -c 15 -l -v
+
+📸 Screenshots (GUI)
 ## Dashboard
 ![Dashboard](screenshots/dashboard.png)
 ## Settings
 ![Settings](screenshots/settings.png)
-
-🛠️ Planned Features
-
-CLI (command-line) version
-
-Windows .exe distribution
-
-Additional language support
-
-Graph-based speed history
 
 ❓ Frequently Asked Questions
 

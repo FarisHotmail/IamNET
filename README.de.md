@@ -12,9 +12,12 @@
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-lightgrey">
   <img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet">
   <img src="https://img.shields.io/badge/Privacy-No%20Telemetry-success">
-  <img src="https://img.shields.io/badge/CLI-Planned-orange">
+  <img src="https://img.shields.io/badge/CLI-Available-success">
 </p>
 
+### Projekt-Hinweise
+Der gesamte in diesem Projekt verwendete Code wurde mit dem Tool Google Studio AI erstellt und dient ausschließlich Hobbyzwecken.
+Auch wenn nicht sehr häufig, wird das Projekt im Laufe der Zeit weiterentwickelt.
 
 🔷 IamNET
 
@@ -92,21 +95,61 @@ Speicherung der Ergebnisse in CSV-Dateien
 
 Anzeige der aktuellen Geschwindigkeit über die GUI
 
-📸 Screenshots
+### CLI-Test-Engine
+
+- Läuft völlig unabhängig von der GUI
+- Alle Einstellungen über Kommandozeilenargumente konfigurierbar
+- Farbige und gut lesbare Terminalprotokolle
+- Sicherer Abbruch mit Strg+C
+- Geeignet für Hintergrundausführung und Automatisierung
+
+### CLI-Parameter
+
+| Parameter | Kurzbeschreibung | Beschreibung |
+---------|------|-------------|
+| --cli | - | CLI-Modus aktivieren |
+| --count | -c | Anzahl der Server (2–100) |
+| --loop | -l | Endlosschleife |
+| --no-traffic | - | Verkehrsprüfung überspringen |
+| --dir | -d | Benutzerdefiniertes Speicherverzeichnis |
+| --verbose | -v | Ausführliche Serverausgabe |
+
+### Hintergrundausführung (Linux)
+Im Hintergrund ausführen:
+nohup python IamNET.py --cli --loop > test.log 2>&1 &
+
+Geplanter Test (Crontab):
+# Jede Nacht um 02:00 Uhr ausführen
+0 2 * * * /usr/bin/python3 /Pfad/zu/IamNET.py --cli -c 30
+
+🖥️ CLI-Nutzung
+
+Einfacher CLI-Test:
+python IamNET.py --cli
+
+Test mit 20 Servern:
+python IamNET.py --cli --count 20
+
+Endlosschleife:
+python IamNET.py --cli --loop
+
+Verkehrsprüfung überspringen:
+python IamNET.py --cli --no-traffic
+
+Ausführliche Ausgabe:
+python IamNET.py --cli --verbose
+
+Benutzerdefiniertes Speicherverzeichnis:
+python IamNET.py --cli --dir /Pfad/zum/Ordner
+
+Kombinierte Nutzung:
+python IamNET.py --cli -c 15 -l -v
+
+📸 Screenshots (GUI)
 ## Armaturenbrett
 ![Dashboard](screenshots/dashboard.png)
 ## Einstellungen
 ![Settings](screenshots/settings.png)
-
-🛠️ Geplante Funktionen
-
-CLI-Version (Kommandozeile)
-
-Windows-.exe-Distribution
-
-Unterstützung weiterer Sprachen
-
-Grafikbasierte Geschwindigkeitsverläufe
 
 ❓ Häufig gestellte Fragen
 
