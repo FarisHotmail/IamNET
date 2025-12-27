@@ -88,13 +88,15 @@ Parameter	Short	Description
 | `--verbose	-v` | `Detailed server output` |
 
 Background Execution (Linux)
+```bash
 nohup python IamNET.py --cli --loop > test.log 2>&1 &
-
+```
 CLI Examples
+```bash
 python IamNET.py --cli
 python IamNET.py --cli --count 20
 python IamNET.py --cli -c 15 -l -v
-
+```
 CLI Color Guide (Summary)
 🟢 Green: Success / Normal
 
