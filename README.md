@@ -60,14 +60,14 @@ For Linux:
 ```bash
 sudo apt install python3-tk
 ```
-⚙️ Installation
+## ⚙️ Installation
 ```bash
 git clone https://github.com/FarisHotmail/IamNET.git
 cd IamNET
 pip install -r requirements.txt
 python IamNET.py
 ```
-🧭 How It Works
+## 🧭 How It Works
 Internet connection is checked
 Network traffic intensity is analyzed
 Server list is generated
@@ -75,7 +75,7 @@ Servers are tested sequentially
 Results are written to CSV files
 Real-time speed is displayed via the GUI
 
-🖥️ CLI Mode
+## 🖥️ CLI Mode
 CLI Parameters
 Parameter	Short	Description
 | File | Description |
@@ -105,9 +105,9 @@ CLI Color Guide (Summary)
 🟣 Purple: Verbose details
 
 ## 📸 Screenshots
-## Dashboard
+### Dashboard
 ![Dashboard](screenshots/dashboard.png)
-## Settings
+### Settings
 ![Settings](screenshots/settings.png)
 
 ❓ FAQ
