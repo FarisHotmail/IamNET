@@ -92,7 +92,9 @@ Los resultados se guardan en archivos CSV
 La velocidad instantánea se muestra a través de la GUI  
 
 📸 Capturas de Pantalla
+## Panel
 ![Dashboard](screenshots/dashboard.png)
+## Ajustes
 ![Settings](screenshots/settings.png)
 
 🛠️ Funcionalidades Planificadas

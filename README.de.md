@@ -93,7 +93,9 @@ Speicherung der Ergebnisse in CSV-Dateien
 Anzeige der aktuellen Geschwindigkeit über die GUI
 
 📸 Screenshots
+## Armaturenbrett
 ![Dashboard](screenshots/dashboard.png)
+## Einstellungen
 ![Settings](screenshots/settings.png)
 
 🛠️ Geplante Funktionen

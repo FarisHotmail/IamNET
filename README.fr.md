@@ -93,10 +93,11 @@ Les résultats sont enregistrés dans des fichiers CSV
 
 La vitesse instantanée est affichée via l’interface graphique
 
-📸 Captures d’écran
-
-
-
+📸 Captures d'écran
+## Tableau de bord
+![Dashboard](screenshots/dashboard.png)
+## Paramètres
+![Settings](screenshots/settings.png)
 
 🛠️ Fonctionnalités prévues
 

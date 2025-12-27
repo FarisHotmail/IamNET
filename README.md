@@ -83,9 +83,10 @@ Results are written to CSV files
 Real-time speed is displayed via the GUI
 
 📸 Screenshots
-
-
-
+## Dashboard
+![Dashboard](screenshots/dashboard.png)
+## Settings
+![Settings](screenshots/settings.png)
 
 🛠️ Planned Features
 

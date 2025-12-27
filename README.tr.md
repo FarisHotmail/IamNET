@@ -92,7 +92,9 @@ Sonuçlar CSV dosyalarına yazılır
 GUI üzerinden anlık hız görüntülenir
 
 📸 Ekran Görüntüleri
+## Dashboard
 ![Dashboard](screenshots/dashboard.png)
+## Ayarlar
 ![Settings](screenshots/settings.png)
 
 🛠️ Planlanan Özellikler
