@@ -61,11 +61,12 @@ For Linux:
 sudo apt install python3-tk
 ```
 ⚙️ Installation
+```bash
 git clone https://github.com/FarisHotmail/IamNET.git
 cd IamNET
 pip install -r requirements.txt
 python IamNET.py
-
+```
 🧭 How It Works
 Internet connection is checked
 
