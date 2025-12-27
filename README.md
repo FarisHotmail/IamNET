@@ -110,10 +110,9 @@ CLI Color Guide (Summary)
 
 📸 Screenshots
 Dashboard
-https://screenshots/dashboard.png
-
+![Dashboard](screenshots/dashboard.png)
 Settings
-https://screenshots/settings.png
+![Settings](screenshots/settings.png)
 
 ❓ FAQ
 Does IamNET use speedtest.net?
