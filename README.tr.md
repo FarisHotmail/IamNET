@@ -1,5 +1,4 @@
 <p align="right">
-  <a href="README.tr.md">Türkçe</a> | 
   <a href="README.en.md">English</a> | 
   <a href="README.de.md">Deutsch</a> | 
   <a href="README.fr.md">Français</a> | 
