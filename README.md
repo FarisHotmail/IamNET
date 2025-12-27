@@ -59,7 +59,7 @@ IamNET:
 For Linux:
 ```bash
 sudo apt install python3-tk
-
+```
 ⚙️ Installation
 git clone https://github.com/FarisHotmail/IamNET.git
 cd IamNET
