@@ -1,4 +1,4 @@
-<p align="right">
+<p align="center">
   <a href="README.tr.md">Türkçe</a> | 
   <a href="README.de.md">Deutsch</a> | 
   <a href="README.fr.md">Français</a> | 
@@ -110,7 +110,7 @@ CLI Color Guide (Summary)
 ### Settings
 ![Settings](screenshots/settings.png)
 
-❓ FAQ
+## ❓ FAQ
 * Does IamNET use speedtest.net?
 * → No. Server information is retrieved from Speedtest infrastructure, but tests are performed via manual downloads.
 
@@ -120,8 +120,10 @@ CLI Color Guide (Summary)
 * Does it work with VPN?
 * → Yes, but results will reflect the VPN connection speed.
 
-🤝 Contributing
+
+## 🤝 Contributing
 Pull Requests and Issues are welcome. For major changes, please open an issue first.
 
-📜 License
+
+## 📜 License
 MIT License
