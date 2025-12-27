@@ -69,27 +69,23 @@ python IamNET.py
 ```
 🧭 How It Works
 Internet connection is checked
-
 Network traffic intensity is analyzed
-
 Server list is generated
-
 Servers are tested sequentially
-
 Results are written to CSV files
-
 Real-time speed is displayed via the GUI
 
 🖥️ CLI Mode
 CLI Parameters
 Parameter	Short	Description
+```bash
 --cli	–	Enable CLI mode
 --count	-c	Number of servers (2–100)
 --loop	-l	Infinite test loop
 --no-traffic	–	Skip traffic check
 --dir	-d	Custom save directory
 --verbose	-v	Detailed server output
-
+```
 Background Execution (Linux)
 nohup python IamNET.py --cli --loop > test.log 2>&1 &
 
