@@ -1,108 +1,119 @@
+<p align="right">
+  <a href="README.tr.md">Türkçe</a> |
+  <a href="README.en.md">English</a>
+  <a href="README.de.md">Deutsch</a>
+  <a href="README.fr.md">Français</a>
+  <a href="README.es.md">Español</a>
+  <a href="README.ru.md">Русский</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.14.2-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/License-MIT-green">
+  <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-lightgrey">
+  <img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet">
+  <img src="https://img.shields.io/badge/Privacy-No%20Telemetry-success">
+  <img src="https://img.shields.io/badge/CLI-Planned-orange">
+</p>
+
 🔷 IamNET
 
-IamNET, çoklu yerli ve yabancı sunucular üzerinden internet hızını ölçmeyi amaçlayan,
-tamamen yerel çalışan ve gizlilik odaklı bir masaüstü uygulamasıdır.
+IamNET is a desktop application designed to measure internet speed using multiple domestic and international servers.  
+It operates entirely locally and is focused on user privacy.
 
-🚀 Özellikler
+🚀 Features
 
-Çoklu sunucu ile hız testi
+- Multi-server speed testing  
+- Domestic / international server separation  
+- GUI (based on CustomTkinter)  
+- Network traffic intensity detection  
+- CSV output support  
+- Multi-language infrastructure (TR / EN ready)  
+- No telemetry  
+- No data transmission  
 
-Yerli / yabancı sunucu ayrımı
-
-GUI (CustomTkinter tabanlı)
-
-Trafik yoğunluğu algılama
-
-CSV çıktı desteği
-
-Çoklu dil altyapısı (TR / EN hazır)
-
-Telemetri yok
-
-Veri gönderimi yok
-
-🔐 Gizlilik Politikası (Önemli)
+🔐 Privacy Policy (Important)
 
 IamNET:
 
-Kullanıcı verisi toplamaz
+- Does not collect user data  
+- Does not transmit data  
+- Does not report to external systems  
+- Does not store any server-specific personal data  
 
-Veri göndermez
+Locally stored files:
 
-Harici sistemlere raporlama yapmaz
+| File | Description |
+|-----|------------|
+| `yurtici_sonuclari.csv` | Domestic server test results |
+| `yurtdisi_sonuclari.csv` | International server test results |
+| `config.json` | Application settings |
 
-Sunucuya özgü hiçbir kişisel veri saklamaz
+All files are stored in the user’s own local directory.
 
-Yerel olarak saklanan dosyalar:
-Dosya	Açıklama
-yurtici_sonuclari.csv	Yerli sunucu test sonuçları
-yurtdisi_sonuclari.csv	Yabancı sunucu test sonuçları
-config.json	Uygulama ayarları
+🖥️ System Requirements
 
-Tüm dosyalar kullanıcının kendi dizininde saklanır.
+- Python 3.14.2  
+- Windows 10 / 11  
+- Linux: Not tested, but very likely to work  
 
-🖥️ Sistem Gereksinimleri
-
-Python 3.14.2
-
-Windows 10 / 11
-
-Linux: Test edilmedi ancak büyük olasılıkla çalışır
-
-Linux için:
+For Linux:
 
 sudo apt install python3-tk
 
-⚙️ Kurulum
-git clone https://github.com/kullaniciadi/IamNET.git
+⚙️ Installation
+
+git clone https://github.com/FarisHotmail/IamNET.git
 cd IamNET
 pip install -r requirements.txt
 python IamNET.py
 
-🧭 Nasıl Çalışır?
 
-İnternet bağlantısı kontrol edilir
+🧭 How It Works
 
-Trafik yoğunluğu analiz edilir
+Internet connection is checked
 
-Sunucu listesi oluşturulur
+Network traffic intensity is analyzed
 
-Sunucular sırayla test edilir
+Server list is generated
 
-Sonuçlar CSV dosyalarına yazılır
+Servers are tested sequentially
 
-GUI üzerinden anlık hız görüntülenir
+Results are written to CSV files
 
-📸 Ekran Görüntüleri
-![Dashboard](screenshots/dashboard.png)
-![Settings](screenshots/settings.png)
+Real-time speed is displayed via the GUI
 
-🛠️ Planlanan Özellikler
+📸 Screenshots
 
-CLI (komut satırı) sürümü
 
-Windows .exe dağıtımı
 
-Daha fazla dil desteği
 
-Grafik tabanlı hız geçmişi
+🛠️ Planned Features
 
-❓ Sık Sorulan Sorular
+CLI (command-line) version
 
-IamNET speedtest.net mi kullanıyor?
-→ Hayır. Speedtest altyapısından sunucu bilgileri alınır ancak testler manuel indirme ile yapılır.
+Windows .exe distribution
 
-Sonuçlar neden farklı çıkıyor?
-→ Sunucu lokasyonu, anlık trafik ve rota değişkenliği.
+Additional language support
 
-VPN ile çalışır mı?
-→ Evet, ancak sonuçlar VPN hızını yansıtır.
+Graph-based speed history
 
-🤝 Katkı
+❓ Frequently Asked Questions
 
-Pull Request ve Issue’lar açıktır.
-Büyük değişikliklerde önce Issue açılması önerilir.
+Does IamNET use speedtest.net?
+→ No. Server information is retrieved from the Speedtest infrastructure, but tests are performed via manual file downloads.
 
-📜 Lisans
+Why do results differ?
+→ Differences are caused by server location, real-time traffic, and routing variability.
+
+Does it work with VPN?
+→ Yes, but results will reflect the VPN connection speed.
+
+🤝 Contributing
+
+Pull Requests and Issues are welcome.
+For major changes, opening an Issue first is recommended.
+
+📜 License
 
 MIT License
