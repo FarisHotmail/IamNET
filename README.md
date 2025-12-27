@@ -111,14 +111,14 @@ CLI Color Guide (Summary)
 ![Settings](screenshots/settings.png)
 
 ❓ FAQ
-Does IamNET use speedtest.net?
-→ No. Server information is retrieved from Speedtest infrastructure, but tests are performed via manual downloads.
+* Does IamNET use speedtest.net?
+* → No. Server information is retrieved from Speedtest infrastructure, but tests are performed via manual downloads.
 
-Why do results differ?
-→ Due to server location, real-time traffic, and routing variability.
+* Why do results differ?
+* → Due to server location, real-time traffic, and routing variability.
 
-Does it work with VPN?
-→ Yes, but results will reflect the VPN connection speed.
+* Does it work with VPN?
+* → Yes, but results will reflect the VPN connection speed.
 
 🤝 Contributing
 Pull Requests and Issues are welcome. For major changes, please open an issue first.
