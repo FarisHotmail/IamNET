@@ -105,9 +105,9 @@ CLI Color Guide (Summary)
 🟣 Purple: Verbose details
 
 ## 📸 Screenshots
-Dashboard
+## Dashboard
 ![Dashboard](screenshots/dashboard.png)
-Settings
+## Settings
 ![Settings](screenshots/settings.png)
 
 ❓ FAQ
