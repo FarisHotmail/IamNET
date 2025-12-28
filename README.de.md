@@ -1,172 +1,138 @@
-<p align="right">
-  <a href="README.tr.md">Türkçe</a> | 
-  <a href="README.en.md">English</a> | 
-  <a href="README.fr.md">Français</a> | 
-  <a href="README.es.md">Español</a> | 
-  <a href="README.ru.md">Русский</a>
+<p align="center">
+<a href="README.tr.md">Türkisch</a> |
+<a href="README.md">English</a> |
+<a href="README.fr.md">Französisch</a> |
+<a href="README.es.md">Spanisch</a> |
+<a href="README.ru.md">Russisch</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.14.2-blue?logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/License-MIT-green">
-  <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-lightgrey">
-  <img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet">
-  <img src="https://img.shields.io/badge/Privacy-No%20Telemetry-success">
-  <img src="https://img.shields.io/badge/CLI-Available-success">
+<img src="https://img.shields.io/badge/Python-3.14.2-blue?logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/License-MIT-green">
+<img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux-lightgrey">
+<img src="https://img.shields.io/badge/GUI-CustomTkinter-blueviolet">
+<img src="https://img.shields.io/badge/Privacy-No%20Telemetry-success">
+<img src="https://img.shields.io/badge/CLI-Available-success">
 </p>
 
-### Projekt-Hinweise
-Der gesamte in diesem Projekt verwendete Code wurde mit dem Tool Google Studio AI erstellt und dient ausschließlich Hobbyzwecken.
-Auch wenn nicht sehr häufig, wird das Projekt im Laufe der Zeit weiterentwickelt.
+# IamNET
 
-🔷 IamNET
+## Projekthinweise
+Der gesamte Code dieses Projekts wurde mit Google Studio AI erstellt. Dieses Projekt ist ein reines Hobbyprojekt. Es wird weiterentwickelt, jedoch nicht regelmäßig.
 
-IamNET ist eine datenschutzorientierte Desktop-Anwendung, die darauf abzielt,
-die Internetgeschwindigkeit über mehrere nationale und internationale Server zu messen.
-Die Anwendung arbeitet vollständig lokal.
+## Beschreibung
+IamNET ist eine datenschutzorientierte Desktop-Anwendung zur Messung der Internetgeschwindigkeit mithilfe mehrerer nationaler und internationaler Server.
 
-🚀 Funktionen
+Sie läuft ausschließlich lokal.
 
-Geschwindigkeitstest mit mehreren Servern
+## 🚀 Funktionen
+- Geschwindigkeitstest auf mehreren Servern
+- Trennung von nationalen und internationalen Servern
+- GUI (basierend auf CustomTkinter)
+- CLI-Modus (GUI-unabhängig)
 
-Trennung zwischen nationalen und internationalen Servern
+- Lasterkennung
+- CSV-Export
+- Mehrsprachige Unterstützung (TR/EN verfügbar)
+- Farbige Terminalausgabe
+- Sicheres Beenden mit Strg+C
+- Keine Telemetrie
+- Keine Datenübertragung
 
-GUI (basierend auf CustomTkinter)
-
-Erkennung hoher Netzwerkverkehrslast
-
-CSV-Ausgabeunterstützung
-
-Mehrsprachige Infrastruktur (TR / EN verfügbar)
-
-Keine Telemetrie
-
-Keine Datenübertragung
-
-🔐 Datenschutzrichtlinie (Wichtig)
-
+## 🔐 Datenschutzrichtlinie
 IamNET:
 
-Erfasst keine Benutzerdaten
+- Erfasst keine Benutzerdaten
+- Überträgt keine Daten
+- Speichert keine serverbezogenen personenbezogenen Daten
 
-Überträgt keine Daten
+**Lokal gespeicherte Dateien:**
 
-Berichtet nicht an externe Systeme
+| Datei | Beschreibung |
+|------|-------------|
+| `yurtici_sonuclari.csv` | Testergebnisse des nationalen Servers |
+| `yurtdisi_sonuclari.csv` | Testergebnisse des internationalen Servers |
+| `config.json` | Anwendungseinstellungen |
 
-Speichert keine server- oder benutzerspezifischen personenbezogenen Daten
-
-Lokal gespeicherte Dateien:
-Datei	Beschreibung
-yurtici_sonuclari.csv	Testergebnisse nationaler Server
-yurtdisi_sonuclari.csv	Testergebnisse internationaler Server
-config.json	Anwendungseinstellungen
-
-Alle Dateien werden ausschließlich im lokalen Verzeichnis des Benutzers gespeichert.
-
-🖥️ Systemanforderungen
-
-Python 3.14.2
-
-Windows 10 / 11
-
-Linux: Nicht getestet, funktioniert jedoch sehr wahrscheinlich
+## 🖥️ Systemvoraussetzungen
+- Python 3.14.2
+- Windows 10 / 11
+- Linux (nicht offiziell getestet)
 
 Für Linux:
-
+```bash
 sudo apt install python3-tk
-
-⚙️ Installation
+```
+## ⚙️ Installation
+```bash
 git clone https://github.com/FarisHotmail/IamNET.git
 cd IamNET
 pip install -r requirements.txt
 python IamNET.py
+```
+## 🧭 Funktionsweise
+Internetverbindung wird geprüft
+Netzwerkverkehrsintensität wird analysiert
+Serverliste wird erstellt
+Server werden nacheinander getestet
+Ergebnisse werden in CSV-Dateien geschrieben
+Geschwindigkeit in Echtzeit wird über die GUI angezeigt
 
-🧭 Funktionsweise
+## 🖥️ CLI-Modus
+CLI-Parameter
+Parameter Kurzbeschreibung
+| Datei | Beschreibung |
 
-Überprüfung der Internetverbindung
+|------|-------------|
 
-Analyse der Netzwerkverkehrslast
+`--cli` | | `CLI-Modus aktivieren` |
 
-Erstellung der Serverliste
+`--count` `-c` | `Anzahl der Server (2–100)` |
 
-Sequenzielles Testen der Server
+`--loop -l` | `Endlose Testschleife` |
 
-Speicherung der Ergebnisse in CSV-Dateien
+`--no-traffic –` | `Verkehrsprüfung überspringen` |
 
-Anzeige der aktuellen Geschwindigkeit über die GUI
+`--dir -d` | `Benutzerdefiniertes Speicherverzeichnis` |
 
-### CLI-Test-Engine
+`--verbose -v` | `Detaillierte Serverausgabe` |
 
-- Läuft völlig unabhängig von der GUI
-- Alle Einstellungen über Kommandozeilenargumente konfigurierbar
-- Farbige und gut lesbare Terminalprotokolle
-- Sicherer Abbruch mit Strg+C
-- Geeignet für Hintergrundausführung und Automatisierung
-
-### CLI-Parameter
-
-| Parameter | Kurzbeschreibung | Beschreibung |
----------|------|-------------|
-| --cli | - | CLI-Modus aktivieren |
-| --count | -c | Anzahl der Server (2–100) |
-| --loop | -l | Endlosschleife |
-| --no-traffic | - | Verkehrsprüfung überspringen |
-| --dir | -d | Benutzerdefiniertes Speicherverzeichnis |
-| --verbose | -v | Ausführliche Serverausgabe |
-
-### Hintergrundausführung (Linux)
-Im Hintergrund ausführen:
+Hintergrundausführung (Linux)
+```bash
 nohup python IamNET.py --cli --loop > test.log 2>&1 &
-
-Geplanter Test (Crontab):
-# Jede Nacht um 02:00 Uhr ausführen
-0 2 * * * /usr/bin/python3 /Pfad/zu/IamNET.py --cli -c 30
-
-🖥️ CLI-Nutzung
-
-Einfacher CLI-Test:
+``` CLI-Beispiele
+```bash
 python IamNET.py --cli
-
-Test mit 20 Servern:
 python IamNET.py --cli --count 20
-
-Endlosschleife:
-python IamNET.py --cli --loop
-
-Verkehrsprüfung überspringen:
-python IamNET.py --cli --no-traffic
-
-Ausführliche Ausgabe:
-python IamNET.py --cli --verbose
-
-Benutzerdefiniertes Speicherverzeichnis:
-python IamNET.py --cli --dir /Pfad/zum/Ordner
-
-Kombinierte Nutzung:
 python IamNET.py --cli -c 15 -l -v
+``` CLI-Farbskala (Übersicht)
+* 🟢 Grün: Erfolgreich / Normal
+* 🟡 Gelb: Warnung
+* 🔴 Rot: Fehler / Kritisch
+* 🔵 Blau: Information
+* 🟣 Lila: Ausführliche Details
 
-📸 Screenshots (GUI)
-## Armaturenbrett
+## 📸 Screenshots
+### Dashboard
 ![Dashboard](screenshots/dashboard.png)
-## Einstellungen
+### Einstellungen
 ![Settings](screenshots/settings.png)
 
-❓ Häufig gestellte Fragen
+## ❓ FAQ
+* Does Nutzt IamNET speedtest.net?
 
-Verwendet IamNET speedtest.net?
-→ Nein. Serverinformationen stammen aus der Speedtest-Infrastruktur, die Tests selbst erfolgen jedoch über manuelle Downloads.
+* → Nein. Die Serverinformationen werden von der Speedtest-Infrastruktur bezogen, die Tests werden jedoch manuell durchgeführt.
 
-Warum unterscheiden sich die Ergebnisse?
-→ Serverstandort, momentane Netzwerklast und Routing-Unterschiede.
+* Warum unterscheiden sich die Ergebnisse?
 
-Funktioniert IamNET mit VPN?
-→ Ja, allerdings spiegeln die Ergebnisse die VPN-Geschwindigkeit wider.
+* → Aufgrund des Serverstandorts, des Echtzeit-Datenverkehrs und der Routing-Variabilität.
 
-🤝 Mitwirken
+* Funktioniert es mit VPN?
 
-Pull Requests und Issues sind willkommen.
-Bei größeren Änderungen wird empfohlen, vorab ein Issue zu eröffnen.
+* → Ja, die Ergebnisse spiegeln jedoch die VPN-Verbindungsgeschwindigkeit wider.
 
-📜 Lizenz
+## 🤝 Mitwirken
+Pull Requests und Issues sind willkommen. Bei größeren Änderungen bitte zuerst ein Issue erstellen.
 
-MIT License
+## 📜 Lizenz
+MIT-Lizenz
