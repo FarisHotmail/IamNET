@@ -85,27 +85,29 @@ Parameter Kurzbeschreibung
 
 |------|-------------|
 
-`--cli` | | `CLI-Modus aktivieren` |
+| `--cli` | | `CLI-Modus aktivieren` |
 
-`--count` `-c` | `Anzahl der Server (2–100)` |
+| `--count` `-c` | `Anzahl der Server (2–100)` |
 
-`--loop -l` | `Endlose Testschleife` |
+| `--loop -l` | `Endlose Testschleife` |
 
-`--no-traffic –` | `Verkehrsprüfung überspringen` |
+| `--no-traffic –` | `Verkehrsprüfung überspringen` |
 
-`--dir -d` | `Benutzerdefiniertes Speicherverzeichnis` |
+| `--dir -d` | `Benutzerdefiniertes Speicherverzeichnis` |
 
-`--verbose -v` | `Detaillierte Serverausgabe` |
+| `--verbose -v` | `Detaillierte Serverausgabe` |
 
 Hintergrundausführung (Linux)
 ```bash
 nohup python IamNET.py --cli --loop > test.log 2>&1 &
-``` CLI-Beispiele
+CLI-Beispiele
+```
 ```bash
 python IamNET.py --cli
 python IamNET.py --cli --count 20
 python IamNET.py --cli -c 15 -l -v
-``` CLI-Farbskala (Übersicht)
+```
+CLI-Farbskala (Übersicht)
 * 🟢 Grün: Erfolgreich / Normal
 * 🟡 Gelb: Warnung
 * 🔴 Rot: Fehler / Kritisch
